@@ -1,9 +1,6 @@
 const express = require('express')
 app = express()
-
 const cors = require("cors")
-
-var url = require('url');
 
 const port = process.env.PORT || 3000
 
@@ -24,7 +21,7 @@ function rollDie(){
 		die3: die3,
 		die4: die4,
 		die5: die5,
-		die6: die6,
+		die6: die6
 	})
 }
 
