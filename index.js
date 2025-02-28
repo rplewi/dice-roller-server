@@ -26,7 +26,6 @@ function rollDie(){
 }
 
 app.get('/roll', (req, res) => {
-
 	res.send(rollDie())
 })
 
