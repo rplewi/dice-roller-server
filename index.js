@@ -29,10 +29,8 @@ app.get('/roll', (req, res) => {
 	res.send(rollDie())
 })
 
-app.use((req, res) => {
-	res.type('text/plain')
-	res.status(200)
-	res.send('200 - All Good!')
+app.get('/', (req,res) =>{
+	res.send('Home')
 })
 
 // Custom 404 page.
