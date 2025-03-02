@@ -26,10 +26,14 @@ function rollDie(){
 }
 
 app.get('/roll', (req, res) => {
-
 	res.send(rollDie())
 })
 
+app.use((req, res) => {
+	res.type('text/plain')
+	res.status(200)
+	res.send('200 - All Good!')
+})
 
 // Custom 404 page.
 app.use((request, response) => {
